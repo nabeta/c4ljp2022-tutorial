@@ -23,7 +23,7 @@
     {% for book in site.data.books %}
       <li>
         <!-- books.csv の title 列のデータを表示 -->
-        <p class="title">{{ book.title }}</p>
+        <p class="title"><a href="{{ book.url }}">{{ book.title }}</a></p>
       </li>
     {% endfor %}
   </ul>
